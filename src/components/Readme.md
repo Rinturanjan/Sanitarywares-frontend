@@ -1,0 +1,1 @@
+ # React components (ProductCard, Navbar, etc.)
