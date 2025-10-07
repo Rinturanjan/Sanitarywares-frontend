@@ -14,6 +14,7 @@ export default function Register() {
       number: f.get("number"),
       email: f.get("email"),
       password: f.get("password"),
+      role: "user",
     };
 
     try {
@@ -27,11 +28,34 @@ export default function Register() {
   return (
     <form onSubmit={handleRegister} className="mx-auto max-w-md space-y-4">
       <h1 className="text-2xl font-bold">Create Account</h1>
-      <input name="name" placeholder="Name" className="w-full rounded border p-2" required />
-      <input name="number" placeholder="Phone Number" className="w-full rounded border p-2" required />
-      <input name="email" placeholder="Email" className="w-full rounded border p-2" required />
-      <input name="password" type="password" placeholder="Password" className="w-full rounded border p-2" required />
-      <button className="w-full rounded bg-black p-2 text-white">Register</button>
+      <input
+        name="name"
+        placeholder="Name"
+        className="w-full rounded border p-2"
+        required
+      />
+      <input
+        name="number"
+        placeholder="Phone Number"
+        className="w-full rounded border p-2"
+        required
+      />
+      <input
+        name="email"
+        placeholder="Email"
+        className="w-full rounded border p-2"
+        required
+      />
+      <input
+        name="password"
+        type="password"
+        placeholder="Password"
+        className="w-full rounded border p-2"
+        required
+      />
+      <button className="w-full rounded bg-black p-2 text-white">
+        Register
+      </button>
     </form>
   );
 }
